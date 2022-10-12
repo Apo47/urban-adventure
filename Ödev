@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class apo {
+
+	public static void main(String[] args) {
+		Scanner apo= new Scanner(System.in);
+
+		float t=0 , y = 0 ,x =0;
+		System.out.println("10 tane tam sayı giriniz");
+		
+		for(int i = 0;i<=9;i++)
+		{ 
+			y=apo.nextInt();
+			
+			if(y%2==0)
+			{
+				t+=y;
+				
+			}
+			if(y<0)
+			{
+				x+=y;
+				
+			}
+		}
+		
+		
+		
+		
+		System.out.println("çift sayıların toplamı: "+t);
+		
+		System.out.println("Girilen negatif sayıların toplamı: "+x);
+	
+	
+	}
+
+}
