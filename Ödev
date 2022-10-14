@@ -1,34 +1,52 @@
+
 import java.util.Scanner;
 public class apo {
 
 	public static void main(String[] args) {
 		Scanner apo= new Scanner(System.in);
 
-		float t=0 , y = 0 ,x =0;
+		int t=0 , y  ,x=0 ,u=0 ,r=0  ;
 		System.out.println("10 tane tam sayı giriniz");
 		
 		for(int i = 0;i<=9;i++)
 		{ 
-			y=apo.nextInt();
+			y = apo.nextInt();
+			
+			 
 			
 			if(y%2==0)
 			{
 				t+=y;
 				
 			}
+			else
+			
+			
+			{
+				u+=y;
+			}
 			if(y<0)
 			{
 				x+=y;
 				
 			}
+			else
+			{
+				r+=y;
+			}
+		
+		
+			
 		}
 		
 		
 		
 		
-		System.out.println("çift sayıların toplamı: "+t);
-		
+		System.out.println("Girilen çift sayıların toplamı: "+t);
+		System.out.println("Girilen tek sayıların toplamı:"+u);
+		System.out.println("girilen pozitif sayıların toplamı:"+r);
 		System.out.println("Girilen negatif sayıların toplamı: "+x);
+		
 	
 	
 	}
